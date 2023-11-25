@@ -7,12 +7,13 @@
   <title>Jessica Ocampo - Portfolio</title>
   <style>
     body {
-      font-family: 'Fira Code', sans-serif;
+      font-family: Futura, sans-serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       background-color: #000000;
       color: white;
+      font-size: 20;
     }
 
     header {
@@ -28,7 +29,7 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #000000;
+      background-color: #131313;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -38,42 +39,61 @@
       text-decoration: none;
       color: #007531;
       margin: 0 20px;
-      padding: 10px;
+      padding: 15px;
       font-size: 25px;
-      font-family: 'VT323', monospace;
+      font-family: VT323, monospace;
+    }
+    
+    nav a:hover {
+      background-color: white;
     }
 
     section {
-      padding: 60px 20px;
+      padding: 200px 20px;
       text-align: center;
     }
     
     h1 {
       color: white;
-      font-family: 'VT323', monospace;
-      font-size: 50px;
+      font-family: VT323, monospace;
+      font-size: 55px;
+      animation-name: textchange;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
     }
+    
+    @keyframes textchange {
+  from {color: white;}
+  to {color: grey;}
+}
     
     h2 {
       color: #b50045;
-      font-family: 'VT323', monospace;
+      font-family: VT323, monospace;
+      font-size: 35px;
     }
     
     h3 {
       color: white;
+      font-size: 20px;
     }
 
+    img {
+      width: 15%;
+      height: 15%;
+    }
+    
     .project {
       width: 80%;
       margin: 0 auto 40px;
       padding: 20px;
-      background-color: #fff;
+      background-color: #1c1c1c;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     footer {
-      background-color: #000000;
+      background-color: #131313;
       color: white;
       text-align: center;
       padding: 1em 0;
@@ -93,12 +113,13 @@
   
   <header>
     <h1>Jessica Samantha Ocampo</h1>
-    <p>Designer & Developer</p>
+    <p>Designer &amp Developer</p>
   </header>
 
   <section id="home">
     <h2>Welcome to My Portfolio</h2>
-    <p>This is a brief introduction to who I am and what I do.</p>
+    <p>Hello, I like to create.</p>
+      <p>I am a 19 year old student studying global business and digital arts at the University of Waterloo.</p>
   </section>
 
   <section id="about">
@@ -109,16 +130,16 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1.</p>
+      <h3>Campus Chaos</h3>
+      <p>(CS105) Javascript p5 game.</p>
     </div>
     <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2.</p>
+      <h3>Intergalatic Jewellery Heist</h3>
+      <p>(ARTS140) Twine Kids game.</p>
     </div>
     <div class="project">
-      <h3>Project 3</h3>
-      <p>Description of Project 3.</p>
+      <h3>oPhone</h3>
+      <p>(CS106) Javascript p5 phone mockup.</p>
     </div>
   </section>
 
@@ -128,7 +149,7 @@
   </section>
 
   <footer>
-    &copy; 2023 Your Name. All rights reserved.
+    &copy; 2023 Jessica Ocampo. All rights reserved.
   </footer>
 
 </body>

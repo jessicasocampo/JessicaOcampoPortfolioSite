@@ -101,7 +101,16 @@
       color: #850f10;
       font-family: VT323, monospace;
       font-size: 70px;
+      animation-name: name;
+  		animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
     }
+    
+    @keyframes name {
+  from {color: #850f10;;}
+  to {color: white;}
+}
 
     h2 {
       color: #850f10;
@@ -120,8 +129,8 @@
     }
     
     img:hover {
-      width: 30%;
-      border-radius: 50%;
+      transform: rotate(350deg);
+      animation-duration: 4s;
     }
     
     .project {
@@ -151,7 +160,8 @@
   </nav>
   
   <header>
-     <img src="avatar.png" alt="Pfp">
+     <img src="pfpavatar.png" alt="Pfp">
+    <h2>Hello there, I'm</h2>
     <h1>Jessica Samantha Ocampo</h1>
     <p>Designer &amp Developer</p>
     <a href="#about" class="button">Explore Skills</a>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
-  <title>Jessica Ocampo - Portfolio</title>
+  <title>Jessica Ocampo-Portfolio</title>
   <style>
     body {
       font-family: Futura, sans-serif;
@@ -32,7 +32,6 @@
     
     .button {
   		background-color: white;
-  		border: none;
   		color: black;
   		padding: 35px 40px;
   		text-align: center;
@@ -69,22 +68,45 @@
     }
     
     .button3 {
-      background-color: white;
-  		border: none;
-  		color: black;
-  		padding: 35px 55px;
+      background-color: #850f10;
+      border-style: outset;
+      border-width: 5px;
+      border-color: #850f10;
+  		color: white;
+  		padding: 25px 45px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
   		font-size: 30px;
-  		margin: 50px 20px;
+  		margin: 40px 20px;
   		cursor: pointer;
       font-family: VT323, monospace;
     }
     
     .button3:hover {
       scale: 120%;
-      color: #850f10;
+      color: black;
+    }
+    
+    .button4 {
+      background-color: #2e2e2e;
+      border-style: outset;
+      border-width: 5px;
+      border-color: #2e2e2e;
+  		color: white;
+  		padding: 25px 45px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 30px;
+  		margin: 40px 20px;
+  		cursor: pointer;
+      font-family: VT323, monospace;
+    }
+    
+    .button4:hover {
+      scale: 120%;
+      color: black;
     }
 
     nav {
@@ -142,21 +164,31 @@
       font-size: 20px;
     }
 
-    img {
+    #pfp {
       width: 25%;
       border-radius: 50%;
     }
     
-    img:hover {
+    #pfp:hover {
       transform: rotate(355deg);
       animation-duration: 4s;
+    }
+    
+    #insta {
+      width: 10%;
+      margin: 20px 20px;
+    }
+    
+    #spotify {
+      width: 10%;
+      margin: 20px 20px;
     }
     
     .project {
       width: 80%;
       margin: 0 auto 40px;
       padding: 20px;
-      background-color: #dbc3c1;
+      background-color: #ebebeb;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -179,7 +211,7 @@
   </nav>
   
   <header>
-     <img src="pfpavatar.png" alt="Pfp">
+     <img src="pfpavatar.png" alt="pfp" section id="pfp">
     <h2>Hello there, I'm</h2>
     <h1>Jessica Samantha Ocampo</h1>
     <p>Designer &amp Developer</p>
@@ -203,6 +235,7 @@
     <div class="project">
       <h3>Campus Chaos</h3>
       <p>(CS105) Javascript p5 game.</p>
+      <a href="https://vimeo.com/778728714?share=copy" class="button4">DEMO</a>
       <a href="https://openprocessing.org/sketch/1762623" class="button3">CLICK TO PLAY</a>
     </div>
     <div class="project">
@@ -218,12 +251,14 @@
   </section>
 
   <section id="findme">
-    <h2>Contact</h2>
+    <h2>Connect With Me</h2>
     <p>Let's connect! Drop me a message and I'll get back to you as soon as possible.</p>
+    <img src="instaicon.png" alt="insta" section id="insta">
+    <img src="spotifyicon.png" alt="spotify" section id="spotify">
   </section>
 
   <footer>
-    &copy; 2023 Jessica Ocampo. All rights reserved.
+    &copy; 2023 J.S.Ocampo. All rights reserved.
   </footer>
 
 </body>

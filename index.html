@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng-ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
-  <title>Jessica Ocampo-Portfolio</title>
+  <title>Jessica Ocampo: Portfolio</title>
   <style>
+    
+    /* Responsive Design Additions */
+  /* Mobile view (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 75%;
+  }
+  img {
+    width: 75%;
+  }
+}
+  
+/* Desktop view (desktops, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+    
     body {
       font-family: Futura, sans-serif;
       margin: 0;
@@ -134,7 +157,7 @@
     }
 
     section {
-      padding: 400px 20px;
+      padding: 300px 20px;
       text-align: center;
     }
     
@@ -174,11 +197,6 @@
       animation-duration: 4s;
     }
     
-    #ampic {
-      width: 20%;
-      border-radius: 50%;
-    }
-    
     #insta {
       width: 10%;
       margin: 40px 40px;
@@ -197,13 +215,43 @@
       scale: 120%;
     }
     
-    .project {
+    .game {
       width: 80%;
       margin: 0 auto 40px;
       padding: 20px;
       background-color: #ebebeb;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .film {
+      width: 80%;
+      margin: 0 auto 40px;
+      padding: 20px;
+      background-color: #ebebeb;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #cc {
+      width: 90%;
+      border-style: outset;
+      border-width: 5px;
+      border-color: #2e2e2e;
+    }
+    
+     #igh {
+      width: 90%;
+      border-style: outset;
+      border-width: 5px;
+      border-color: #2e2e2e;
+    }
+    
+     #op {
+      width: 90%;
+      border-style: outset;
+      border-width: 5px;
+      border-color: #2e2e2e;
     }
 
     footer {
@@ -219,8 +267,9 @@
    <nav> 
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#findme">Find Me!</a>
+    <a href="#games">Games</a>
+    <a href="#films">Films</a>
+    <a href="#findme">Find Me</a>
   </nav>
   
   <header>
@@ -234,51 +283,80 @@
 
   <section id="home">
     <h2>Welcome to My Portfolio</h2>
-    <p>Hello, I like to create.</p>
-      <p>I am a 19 year old student studying global business and digital arts at the University of Waterloo.</p>
+    <h3>I like to create.</h3>
+      <p>I am a 19 year old student studying global business and digital arts at the University of Waterloo. 
+        I am in my second year of University, learning about UX/UI design, film culture & digital culture.</p>
+    
+    <p> I am passionate to learn more about the design and coding that goes on behind website and game development.</p>
   </section>
 
   <section id="about">
-    <img src="picme.jpg" alt="ampic" section id="ampic">
+    <br>
     <h2>About Me</h2>
-     <h3>Knowledgable in Coding Languages</h3>
+    <h3>Knowledgable in Coding Languages</h3>
     <p>Javascript P5 & HTML + CSS</p>
-    <p>
-      E.g. Creating designs, games, websites, etc.
-    </p>
+    <p>E.g. Creating designs, games, websites, etc.</p>
+    
+    <br>
+    <h3>Knowledgable in Equipment</h3>
+     <p>Camera & Tripods, Audio Kits, Lighting Kits</p>
+     <p>E.g. Canon90D, ZoomH6N, light sticks, etc.</p>
+    
+  	<br>
     <h3>Knowledgable in Softwares</h3>
-    <p>Adobe Creative Cloud & Microsoft Office</p>
-    <p>
-      E.g. Illustrator, Premier Pro, Word, Excel, etc.
-    </p>
+    <p>Adobe Creative Cloud, Microsoft Office & Figma</p>
+    <p>E.g. Illustrator, Premier Pro, Word, Excel, etc.</p>
+
   </section>
 
-  <section id="projects">
+  <section id="games">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="game">
       <h3>Campus Chaos</h3>
-      <p>(CS105) Javascript p5 game.</p>
+      <p>(CS105) Javascript P5 Game.</p>
+      <img src="campusc.png" alt="cc" section id="cc">
       <a href="https://vimeo.com/778728714?share=copy" class="button4">DEMO</a>
       <a href="https://openprocessing.org/sketch/1762623" class="button3">CLICK TO PLAY</a>
     </div>
-    <div class="project">
+    <div class="game">
       <h3>Intergalatic Jewellery Heist</h3>
       <p>(ARTS140) Twine Kids game.</p>
+      <img src="intergalheist.png" alt="igh" section id="igh">
       <a href="Intergalactic Jewellery Heist.html" class="button3">CLICK TO PLAY</a>
     </div>
-    <div class="project">
+    <div class="game">
       <h3>oPhone</h3>
-      <p>(CS106) Javascript p5 phone mockup.</p>
-      <a href="https://openprocessing.org/sketch/1888109" class="button3">CLICK TO PLAY</a>
+      <p>(CS106) Javascript P5 iPhone Mockup.</p>
+      <img src="ophone.png" alt="op" section id="op">
+      <a href="https://openprocessing.org/sketch/1888109" class="button3">CLICK TO VIEW</a>
+    </div>
+  </section>
+  
+  <section id="films">
+    <h2>Films</h2>
+    <div class="film">
+    <h3>The Uphill Battle Of Activist Chairperson: Hannah Sabit</h3>
+      <p>A Short Documentary</p>
+      <a href="https://www.youtube.com/watch?v=_0RsJRH2B6o" class="button3">WATCH NOW</a>
+    </div>
+    <div class="film">
+    <h3>"Breaking the Binary: Unveiling Gender Bias in Technology and Domestic Roles"</h3>
+      <p>A Video Essay</p>
+      <a href="https://vimeo.com/884259166?share=copy" class="button3">WATCH NOW</a>
+    </div>
+    <div class="film">
+    <h3>"Lip-chiveous"</h3>
+      <p>A Silent Film</p>
+      <a href="https://vimeo.com/870671022?share=copy" class="button3">WATCH NOW</a>
     </div>
   </section>
 
   <section id="findme">
     <h2>Connect With Me</h2>
-    <p>Let's connect! Drop me a message and I'll get back to you as soon as possible.</p>
+    <p>Let's connect. Drop me a message and I'll get back to you as soon as possible.</p>
     
     <form action="#">
-      <label for="message">Leave a Message</label><br>
+      <label for="message">Leave a Message.</label><br>
   		<input type="text" id="message" name="message" style="margin: 20px; 20px; width:400px; height:150px;""><br>
       <input type="submit" value="Submit" style="margin: 20px; 20px; width:70px; height:40px;">
     </form>

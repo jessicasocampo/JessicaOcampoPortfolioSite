@@ -11,25 +11,57 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: #000000;
-      color: white;
+   		color: black;
       font-size: 20;
+      background-image: url("redgradientbg.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #fffaf9;
     }
 
     header {
-      position: fixed;
+      position: static;
       width: 100%;
-      background-color: #000000;
-      color: white;
+      background-color: #000000, 0;
+      color: #f2f4f3;
       text-align: center;
       padding: 1em 0;
       z-index: 1000;
+      
     }
+    
+    .button {
+  		background-color: white;
+  		border: none;
+  		color: black;
+  		padding: 35px 40px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 30px;
+  		margin: 50px 20px;
+  		cursor: pointer;
+  		font-family: VT323, monospace;
+		}
+    
+  	.button2 {
+  		background-color: white;
+  		border: none;
+  		color: black;
+  		padding: 35px 55px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 30px;
+  		margin: 50px 20px;
+  		cursor: pointer;
+      font-family: VT323, monospace;
+		}
 
     nav {
       display: flex;
       justify-content: center;
-      background-color: #131313;
+      background-color: white, 0;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -37,7 +69,7 @@
 
     nav a {
       text-decoration: none;
-      color: #007531;
+      color: black;
       margin: 0 20px;
       padding: 15px;
       font-size: 25px;
@@ -49,26 +81,19 @@
     }
 
     section {
-      padding: 200px 20px;
+      padding: 300px 20px;
       text-align: center;
     }
     
     h1 {
-      color: white;
+      color: #984f51;
       font-family: VT323, monospace;
-      font-size: 55px;
-      animation-name: textchange;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
+      font-size: 70px;
     }
-    
-    @keyframes textchange {
-  from {color: white;}
-  to {color: grey;}
-}
+
     
     h2 {
-      color: #b50045;
+      color: #850f10;
       font-family: VT323, monospace;
       font-size: 35px;
     }
@@ -87,13 +112,13 @@
       width: 80%;
       margin: 0 auto 40px;
       padding: 20px;
-      background-color: #1c1c1c;
+      background-color: #c2c2c2;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     footer {
-      background-color: #131313;
+      background-color: black;
       color: white;
       text-align: center;
       padding: 1em 0;
@@ -102,9 +127,7 @@
 </head>
 <body>
 
-   <nav>
-  <img src="nav buttons.png" alt="appletab">
-     
+   <nav> 
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -114,6 +137,8 @@
   <header>
     <h1>Jessica Samantha Ocampo</h1>
     <p>Designer &amp Developer</p>
+    <a href="#" class="button">Explore Skills</a>
+    <a href="#" class="button2">Tour Games</a>
   </header>
 
   <section id="home">

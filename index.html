@@ -15,7 +15,7 @@
       font-size: 20;
       background-image: url("redgradientbg.webp");
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 100% 900px;
       background-color: #fffaf9;
     }
 
@@ -57,6 +57,16 @@
   		cursor: pointer;
       font-family: VT323, monospace;
 		}
+    
+    .button:hover {
+      scale: 120%;
+      color: #850f10;
+    }
+    
+    .button2:hover {
+      scale: 120%;
+      color: #850f10;
+    }
 
     nav {
       display: flex;
@@ -78,20 +88,21 @@
     
     nav a:hover {
       background-color: white;
+      scale: 120%;
+      color: #850f10;
     }
 
     section {
-      padding: 300px 20px;
+      padding: 400px 20px;
       text-align: center;
     }
     
     h1 {
-      color: #984f51;
+      color: #850f10;
       font-family: VT323, monospace;
       font-size: 70px;
     }
 
-    
     h2 {
       color: #850f10;
       font-family: VT323, monospace;
@@ -104,8 +115,13 @@
     }
 
     img {
-      width: 15%;
-      height: 15%;
+      width: 35%;
+      border-radius: 50%;
+    }
+    
+    img:hover {
+      width: 25%;
+      border-radius: 50%;
     }
     
     .project {
@@ -131,14 +147,15 @@
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#findme">Find Me!</a>
   </nav>
   
   <header>
+     <img src="avatarr.png" alt="Pfp">
     <h1>Jessica Samantha Ocampo</h1>
     <p>Designer &amp Developer</p>
-    <a href="#" class="button">Explore Skills</a>
-    <a href="#" class="button2">Tour Games</a>
+    <a href="#about" class="button">Explore Skills</a>
+    <a href="#projects" class="button2">Tour Games</a>
   </header>
 
   <section id="home">
@@ -168,7 +185,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="findme">
     <h2>Contact</h2>
     <p>Let's connect! Drop me a message and I'll get back to you as soon as possible.</p>
   </section>

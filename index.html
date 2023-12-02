@@ -70,7 +70,7 @@
       background-color: #000000, 0;
       color: black;
       text-align: center;
-      padding: 1em 0;
+      padding: 5em 0;
       z-index: 1000;
       
     }
@@ -86,14 +86,15 @@
       
   		background-color: #786e43, 0;
   		color: white;
-  		padding: 30px 40px;
+  		padding: 10px 35px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
-  		font-size: 30px;
-  		margin: 30px 20px;
+  		font-size: 20px;
   		cursor: pointer;
   		font-family: VT323, monospace;
+      
+      margin: 30px 50px;
 		}
     
   	.button2 {
@@ -107,14 +108,15 @@
       
   		background-color: #786e43, 0;
       color: white;
-  		padding: 30px 55px;
+  		padding: 10px 35px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
-  		font-size: 30px;
-  		margin: 20px 10px;
+  		font-size: 20px;
   		cursor: pointer;
       font-family: VT323, monospace;
+      
+      margin: 30px 50px;
 		}
     
     .button:hover {
@@ -184,14 +186,15 @@
       
       background-color: #2e2e2e, 0;
   		color: white;
-  		padding: 20px 40px;
+  		padding: 10px 20px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
   		font-size: 22px;
-  		margin: 35px 15px;
+  		margin: 20px 110px;
   		cursor: pointer;
       font-family: VT323, monospace;
+      float: left;
     }
     
     .button5:hover {
@@ -212,7 +215,7 @@
     nav a {
       text-decoration: none;
       color: black;
-      margin: 0 10px;
+      margin: 0 20px;
       padding: 15px;
       font-size: 20px;
       font-family: VT323, monospace;
@@ -225,18 +228,22 @@
     }
 
     section {
-      padding: 100px 20px;
+      padding: 200px 20px;
       text-align: center;
     }
     
     h1 {
       color: #797d7c;
       font-family: VT323, monospace;
-      font-size: 80px;
+      font-size: 85px;
       animation-name: name;
   		animation-duration: 4s;
       animation-delay: 2s;
       animation-iteration-count: infinite;
+      text-align: left;
+      padding: 0 70px;
+      width: 50%;
+      line-height: 70px;
     }
     
     @keyframes name {
@@ -247,7 +254,8 @@
     h2 {
       color: #d9c364;
       font-family: VT323, monospace;
-      font-size: 35px;
+      font-size: 50px;
+      text-align: center;
     }
     
     h3 {
@@ -268,18 +276,12 @@
       font-weight: bold;
       margin: 0 20px;
     }
-    
-    ul {
-      list-style-type: square;
-      color: black;
-      width: 40%;
-  		margin: 0 auto; 
-      text-align: left;
-    }
 
     #pfp {
       width: 20%;
       border-radius: 50%;
+      float: left;
+      padding: 60px 20px;
     }
     
     #pfp:hover {
@@ -288,8 +290,8 @@
     }
     
     #insta {
-      width: 5%;
-      margin: 25px 20px;
+      width: 15%;
+      float: right;
     }
     
     #insta:hover {
@@ -297,8 +299,8 @@
     }
     
     #spotify {
-      width: 5%;
-      margin: 25px 20px;
+      width: 15%;
+  
     }
     
     #spotify:hover {
@@ -398,20 +400,19 @@
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#connect">Connect</a>
+     <a href="https://instagram.com/jaesamanthaa?igshid=YTQwZjQ0NmI0OA==">
+  	<img src="instaicon.png" alt="insta" section id="insta">
+	</a>  
+  <a href="https://open.spotify.com/user/jesspotifs_?si=86fec1efd700443e">
+  	<img src="spotifyicon.png" alt="spotify" section id="spotify">
+	</a>
   </nav>
   
   <header>
      <img src="pfpavatar.png" alt="pfp" section id="pfp">
     <p>Hello, I'm</p>
-    <h1>Jessica Samantha Ocampo</h1>
+    <h1>Jessica Ocampo</h1>
     <p>Designer &amp Developer</p>
-    <a href="https://instagram.com/jaesamanthaa?igshid=YTQwZjQ0NmI0OA==">
-  	<img src="instaicon.png" alt="insta" section id="insta">
-	</a>
-    
-  <a href="https://open.spotify.com/user/jesspotifs_?si=86fec1efd700443e">
-  	<img src="spotifyicon.png" alt="spotify" section id="spotify">
-	</a>
     <br>
     <a href="#about" class="button">Explore Skills</a>
     <a href="#projects" class="button2">Tour Games</a>
@@ -488,14 +489,6 @@
     <p>jsocampo@uwaterloo.com</p>
     <a href="mailto:jsocampo@uwaterloo.com" class="button5">Send Email to Uwaterloo Account</a>
     <br>
-    <h3>Let's connect.</h3>
-    <p>Drop me a message and I'll get back to you as soon as possible.</p>
-    <br>
-    <form action="#">
-      <label for="message">Send a Message</label><br>
-  		<input type="text" id="message" name="message" style="margin: 20px; 20px; width: 75%; height:150px;""><br>
-      <input type="submit" value="Submit" style="margin: 20px; 20px; width:80px; height:50px; font-family: 'Rubik', sans-serif;">
-    </form>
   </section>
 
   <footer>

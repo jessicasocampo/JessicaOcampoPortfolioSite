@@ -48,7 +48,7 @@
       padding: 0;
       box-sizing: border-box;
    		color: white;
-      font-size: 20px;
+      font-size: 18px;
       background-image: url("ombbg.avif");
       background-repeat: no-repeat;
       background-size: 100% 900px;
@@ -76,12 +76,15 @@
     }
     
     .button {
-      border-radius: 10px;
       border-style: solid;
       border-width: 1px;
       border-color: white;
       
-  		background-color: #b3a670;
+      border: 2px solid transparent; 
+  		border-radius: 5px; 
+  		animation: glowing 4s infinite;
+      
+  		background-color: #786e43, 0;
   		color: white;
   		padding: 30px 40px;
   		text-align: center;
@@ -94,31 +97,34 @@
 		}
     
   	.button2 {
-      border-radius: 10px;
       border-style: solid;
       border-width: 1px;
       border-color: white;
       
-  		background-color: #b3a670;
+      border: 2px solid transparent; 
+  		border-radius: 5px; 
+  		animation: glowing 4s infinite;
+      
+  		background-color: #786e43, 0;
       color: white;
   		padding: 30px 55px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
   		font-size: 30px;
-  		margin: 30px 20px;
+  		margin: 20px 10px;
   		cursor: pointer;
       font-family: VT323, monospace;
 		}
     
     .button:hover {
       scale: 120%;
-      color: black;
+      color: #d9c364;
     }
     
     .button2:hover {
       scale: 120%;
-      color: black;
+      color: #d9c364;
     }
     
     .button3 {
@@ -129,19 +135,19 @@
       
       background-color: #b3a670;
   		color: white;
-  		padding: 25px 45px;
+  		padding: 10px 15px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
-  		font-size: 30px;
-  		margin: 40px 20px;
+  		font-size: 20px;
+  		margin: 10px 5px;
   		cursor: pointer;
       font-family: VT323, monospace;
     }
     
     .button3:hover {
       scale: 120%;
-      color: black;
+      color: #d9c364;
     }
     
     .button4 {
@@ -150,21 +156,21 @@
       border-width: 1px;
       border-color: white;
       
-      background-color: #2e2e2e;
+      background-color: black;
   		color: white;
-  		padding: 25px 45px;
+  		padding: 10px 15px;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
-  		font-size: 30px;
-  		margin: 40px 20px;
+  		font-size: 20px;
+  		margin: 10px 5px;
   		cursor: pointer;
       font-family: VT323, monospace;
     }
     
     .button4:hover {
       scale: 120%;
-      color: black;
+      color: #d9c364;
     }
     
     .button5 {
@@ -187,7 +193,7 @@
     
     .button5:hover {
       scale: 120%;
-      color: black;
+      color: #d9c364;
     }
 
     nav {
@@ -215,7 +221,7 @@
     }
 
     section {
-      padding: 200px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
     
@@ -249,7 +255,7 @@
     h4 {
       text-decoration: none;
       color: black;
-      margin: 0 140px;
+      margin: 0 200px;
       padding: 15px;
       font-size: 25px;
       font-family: VT323, monospace;
@@ -293,13 +299,36 @@
     }
     
     .projects {
-      width: 80%;
-      margin: 0 auto 40px;
+      width: 250px;
+      height: 500px;
+      margin: 50px 10px;
       padding: 20px;
       background-color: #786e43;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      float: left;
+      
+      border: 2px solid transparent; 
+  		border-radius: 5px; 
+  		animation: glowing 4s infinite; 
     }
+    
+    @keyframes glowing {
+  	0% {
+    	box-shadow: 0 0 5px 0px #d9c364;
+  	}
+  	50% {
+    	box-shadow: 0 0 10px 5px #d9c364;
+  	}
+  	100% {
+    	box-shadow: 0 0 5px 0px #d9c364;
+  	}
+	}
+    
+    /* Additional style to clear floats in the projects section */
+		#projects-container::after {
+  		content: "";
+  		display: table;
+  		clear: both;
+		}
     
     #cc {
       width: 90%;
@@ -352,7 +381,6 @@
   </style>
 </head>
 <body>
-
    <nav> 
      <h4>J. Ocampo</h4>
     <a href="#skills">Skills</a>
@@ -401,6 +429,7 @@
 
    <section id="projects">
     <h2>Projects</h2>
+     <div id="projects-container">
     <div class="projects">
       <h3>Campus Chaos</h3>
       <p>(CS105) Javascript P5 Game.</p>
@@ -423,11 +452,12 @@
       <img src="ophone.png" alt="op" section id="op">
       <a href="https://vimeo.com/890419342?share=copy" class="button4">DEMO</a>
       <a href="https://openprocessing.org/sketch/1888109" class="button3">CLICK TO VIEW</a>
-    </div>
+    	</div>
+  	</div>
   </section>
 
   <section id="bio">
-    <h2>Welcome to My Portfolio</h2>
+    <h2>Bio</h2>
     <h3>I like to create.</h3>
       <p>I am a 19 year old student studying global business and digital arts at the University of Waterloo. 
         As I move forward in my second year, attending Stratford School of Interaction Design and Business, I indulge in coding regarding design, UX/UI prototyping, film culture & digital culture.</p>

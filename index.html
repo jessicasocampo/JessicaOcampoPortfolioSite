@@ -47,12 +47,12 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-   		color: black;
+   		color: white;
       font-size: 20px;
-      background-image: url("redgradientbg.webp");
+      background-image: url("ombbg.avif");
       background-repeat: no-repeat;
       background-size: 100% 900px;
-      background-color: #fffaf9;
+      background-color: black;
       font-family: "Rubik", sans-serif;
       line-height: 40px;
     }
@@ -76,7 +76,7 @@
     }
     
     .button {
-  		background-color: #a7b8b7,0;
+  		background-color: #b3a670;
   		color: white;
   		padding: 30px 40px;
   		text-align: center;
@@ -86,13 +86,10 @@
   		margin: 55px 20px;
   		cursor: pointer;
   		font-family: VT323, monospace;
-      border-style: outset;
-      border-width: 5px;
-      border-color: white;
 		}
     
   	.button2 {
-  		background-color: #850f10;
+  		background-color: #b3a670;
   		border: none;
       color: white;
   		padding: 30px 55px;
@@ -103,9 +100,7 @@
   		margin: 55px 20px;
   		cursor: pointer;
       font-family: VT323, monospace;
-      border-style: outset;
-      border-width: 5px;
-      border-color: #590c19;
+  
 		}
     
     .button:hover {
@@ -119,10 +114,7 @@
     }
     
     .button3 {
-      background-color: #850f10;
-      border-style: outset;
-      border-width: 5px;
-      border-color: #850f10;
+      background-color: #b3a670;
   		color: white;
   		padding: 25px 45px;
   		text-align: center;
@@ -141,9 +133,6 @@
     
     .button4 {
       background-color: #2e2e2e;
-      border-style: outset;
-      border-width: 5px;
-      border-color: #2e2e2e;
   		color: white;
   		padding: 25px 45px;
   		text-align: center;
@@ -183,7 +172,7 @@
 
     nav {
       display: flex;
-      justify-content: center;
+      justify-content: right;
       background-color: white, 0;
       position: sticky;
       top: 0;
@@ -195,7 +184,7 @@
       color: black;
       margin: 0 20px;
       padding: 15px;
-      font-size: 25px;
+      font-size: 20px;
       font-family: VT323, monospace;
     }
     
@@ -211,7 +200,7 @@
     }
     
     h1 {
-      color: #850f10;
+      color: #b3a670;
       font-family: VT323, monospace;
       font-size: 80px;
       animation-name: name;
@@ -221,19 +210,29 @@
     }
     
     @keyframes name {
-  from {color: #850f10;}
-  to {color: white;}
+  from {color: #b3a670;}
+  to {color: black;}
 }
 
     h2 {
-      color: #850f10;
+      color: white;
       font-family: VT323, monospace;
       font-size: 35px;
     }
     
     h3 {
-      color: black;
+      color: white;
       font-size: 22px;
+      font-weight: bold;
+    }
+    
+    h4 {
+      text-decoration: none;
+      color: black;
+      margin: 0 90px;
+      padding: 15px;
+      font-size: 25px;
+      font-family: VT323, monospace;
       font-weight: bold;
     }
     
@@ -273,15 +272,11 @@
       scale: 120%;
     }
     
-    #portfo {
-      width: 15%;
-    }
-    
     .game {
       width: 80%;
       margin: 0 auto 40px;
       padding: 20px;
-      background-color: #ebebeb;
+      background-color: #786e43;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -290,7 +285,7 @@
       width: 80%;
       margin: 0 auto 40px;
       padding: 20px;
-      background-color: #ebebeb;
+      background-color: #786e43;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -348,6 +343,9 @@
 <body>
 
    <nav> 
+     <h4>
+       J. Ocampo
+     </h4>
     <a href="#home">Home</a>
     <a href="#skills">Skills</a>
     <a href="#games">Games</a>
@@ -365,7 +363,6 @@
   </header>
 
   <section id="home">
-    <img src="portfoicon.png" alt="portfo" section id="portfo">
     <h2>Welcome to My Portfolio</h2>
     <h3>I like to create.</h3>
       <p>I am a 19 year old student studying global business and digital arts at the University of Waterloo. 
@@ -374,17 +371,7 @@
     <p>As a GBDA student, I am passionate to learn more about the design and coding that goes on behind website and game development.
     As this portfolio will display projects around game design and film, I will also display some of my graphic design work as well.</p>
   	<br>
-    <h3>About Me</h3>
-    <ul>
-      <li>I am an ENTJ</li>
-      <li>Moved from Newmarket, Ontario</li>
-      <li>Studying the Korean Language</li>
-      <li>I enjoy playing on my Nintendo Switch</li>
-      <li>I like playing Badminton</li>
-      <li>I prefer to express myself through fashion</li>
-      <li>Music is a big part of my life</li>
-      <li>Video game design and architectual design interest me</li>
-    </ul>
+    
   </section>
 
   <section id="skills">

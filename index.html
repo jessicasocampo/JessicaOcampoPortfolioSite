@@ -100,7 +100,7 @@
     
 
     section {
-      padding: 200px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
     
@@ -229,7 +229,7 @@
     }
     
     .colorbutton:hover {
-      scale: 120%;
+      transform: translateY(-10px);
       color: #d9c364;
     }
     
@@ -322,6 +322,10 @@
   	}
 	}
     
+    .projects:hover {
+      transform: translateY(-25px);
+    }
+    
     /* Additional style to clear floats in the projects section */
 		#projects-container::after {
   		content: "";
@@ -369,9 +373,9 @@
 <body>
    <nav> 
      <h4>J.O</h4>
+    <a href="#projects">Projects</a>
     <a href="#bio">Bio</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
     <a href="#connect">Connect</a>
   </nav>
   
@@ -384,6 +388,33 @@
     <a href="#about" class="homebutton">Explore Skills</a>
     <a href="#projects" class="homebutton2">Tour Games</a>
   </header>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+     <div id="projects-container">
+    <div class="projects">
+      <img src="campusc.png" alt="cc" section id="cc">
+      <h3 style="padding-top: 20px;">Campus Chaos</h3>
+      <p style="font-size: 14px; line-height: 30px;">A youthful Javascript P5 mini game to keep you on your toes.  
+        An environment based off the University of Waterloo campus. Watch the demo or play now.</p>
+      <a href="https://vimeo.com/778728714?share=copy" class="fa-solid fa-desktop" style="color: #ffffff;"></a>
+      <a href="https://openprocessing.org/sketch/1762623" class="fa-solid fa-play" style="color: #ffffff;"></a>
+    </div>
+    <div class="projects">
+      <img src="intergalheist.png" alt="igh" section id="igh">
+      <h3 style="padding-top: 20px;">Intergalatic Jewellery Heist</h3>
+      <p style="font-size: 14px; line-height: 30px;">A space-themed Twine kids game meant to fuel your inner child. Play at your own risk.</p>
+      <a href="Intergalactic Jewellery Heist.html" class="fa-solid fa-play" style="color: #ffffff;"></a>
+    </div>
+    <div class="projects">
+      <img src="ophone.png" alt="op" section id="op">
+      <h3 style="padding-top: 20px;">oPhone</h3>
+      <p style="font-size: 14px; line-height: 30px;">A cute and simple Javascript P5 iPhone Mockup. Dive into the notes app. Watch the demo or view now.</p>
+      <a href="https://vimeo.com/890419342?share=copy" class="fa-solid fa-desktop" style="color: #ffffff;"></a>
+      <a href="https://openprocessing.org/sketch/1888109" class="fa-solid fa-play" style="color: #ffffff;"></a>
+    	</div>
+  	</div>
+  </section>
   
   <section id="bio">
     <h2>Bio</h2>
@@ -428,32 +459,6 @@
     <a href="#" class="clearbutton">CANON90D</a>
     <a href="#" class="clearbutton">ZOOMH6N</a>
     <a href="#" class="clearbutton">MANFROTTO BEFREE TRIPOD</a>
-  </section>
-  
-   <section id="projects">
-    <h2>Projects</h2>
-     <div id="projects-container">
-    <div class="projects">
-      <img src="campusc.png" alt="cc" section id="cc">
-      <h3 style="padding-top: 20px;">Campus Chaos</h3>
-      <p>(CS105) Javascript P5 Game.</p>
-      <a href="https://vimeo.com/778728714?share=copy" class="fa-solid fa-desktop" style="color: #ffffff;"></a>
-      <a href="https://openprocessing.org/sketch/1762623" class="fa-solid fa-play" style="color: #ffffff;"></a>
-    </div>
-    <div class="projects">
-      <img src="intergalheist.png" alt="igh" section id="igh">
-      <h3 style="padding-top: 20px;">Intergalatic Jewellery Heist</h3>
-      <p>(ARTS140) Twine Kids game.</p>
-      <a href="Intergalactic Jewellery Heist.html" class="fa-solid fa-play" style="color: #ffffff;"></a>
-    </div>
-    <div class="projects">
-      <img src="ophone.png" alt="op" section id="op">
-      <h3 style="padding-top: 20px;">oPhone</h3>
-      <p>(CS106) Javascript P5 iPhone Mockup.</p>
-      <a href="https://vimeo.com/890419342?share=copy" class="fa-solid fa-desktop" style="color: #ffffff;"></a>
-      <a href="https://openprocessing.org/sketch/1888109" class="fa-solid fa-play" style="color: #ffffff;"></a>
-    	</div>
-  	</div>
   </section>
 
   <section id="connect">

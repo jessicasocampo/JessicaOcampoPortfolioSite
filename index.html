@@ -85,7 +85,7 @@
   		border-radius: 5px; 
   		animation: glowing 4s infinite;
       
-  		background-color: #786e43, 0;
+  		background-color: black;
   		color: white;
   		padding: 10px 35px;
   		text-align: center;
@@ -107,7 +107,7 @@
   		border-radius: 5px; 
   		animation: glowing 4s infinite;
       
-  		background-color: #786e43, 0;
+  		background-color: black;
       color: white;
   		padding: 10px 35px;
   		text-align: center;
@@ -136,7 +136,7 @@
       border-width: 1px;
       border-color: white;
       
-      background-color: #70121b, 0;
+      background-color: #7a5a00;
   		color: white;
   		padding: 10px 15px;
   		text-align: center;
@@ -235,7 +235,7 @@
     }
     
     h1 {
-      color: #797d7c;
+      color: black;
       font-family: VT323, monospace;
       font-size: 100px;
       animation-name: name;
@@ -243,10 +243,20 @@
       animation-delay: 2s;
       animation-iteration-count: infinite;
       text-align: left;
-      padding: 0 70px;
+      padding: 0 60px;
       width: 50%;
-      line-height: 70px;
+      line-height: 80px;
+      }
+    
+    .glow-text {
+    	animation: glowingtext 2s infinite;
     }
+    
+     @keyframes glowingtext {
+            0% { text-shadow: 0 0 10px #d9c364; }
+            50% { text-shadow: 0 0 20px #d9c364; }
+            100% { text-shadow: 0 0 10px #d9c364; }
+        }
     
     @keyframes name {
   from {color: #797d7c;}
@@ -399,8 +409,8 @@
   
   <header>
      <img src="pfpavatar.png" alt="pfp" section id="pfp">
-    <p>Hello, I'm</p>
-    <h1>Jessica Ocampo</h1>
+    <p style="font-size: 24px;">Hello fellow creators, I'm</p>
+    <h1 class="glow-text">Jessica Ocampo</h1>
     <p>Designer &amp Developer</p>
     <br>
     <a href="#about" class="button">Explore Skills</a>
@@ -413,22 +423,30 @@
       <p>I am a 19 year old student studying global business and digital arts at the University of Waterloo. 
         As I move forward, attending Stratford School of Interaction Design and Business, I indulge in coding regarding design, UX/UI prototyping, film culture & digital culture.</p>
     <br>
-    <h3>Areas of Interest</h3>
-    <p>Website Development, Game Development, UX/UI Prototyping, Video Editing</p>
+    <h3>Let's Talk About</h3>
+    <a href="#" class="button3">WEBSITE DEVELOPMENT</a>
+    <a href="#" class="button3">GAME DEVELOPMENT</a>
+    <a href="#" class="button3">UX/UI PROTOTYPING</a>
+    <a href="#" class="button3">VIDEO EDITING</a>
     <br>
     <h3>Hobbies</h3>
-    <p>Gaming, Badminton, Language Study, Fashion</p>
+    <a href="#" class="button4">GAMING</a>
+    <a href="#" class="button4">BADMINTON</a>
+    <a href="#" class="button4">FASHION</a>
+    <a href="#" class="button4">COOKING</a>
+    <a href="#" class="button4">WEIGHT-LIFTING</a>
   </section>
   
   <section id="skills" style="margin: 0 100px;">
     <br>
     <h2>Skills</h2>
-    <h3>Programming Languages</h3>
+    <h3 style="text-align: center;">Programming Languages</h3>
     <a href="#" class="button4">JAVASCRIPT P5</a>
     <a href="#" class="button4">HTML</a>
     <a href="#" class="button4">CSS</a>
     <br>
-    <h3>Software & Tools</h3>
+    <br>
+    <h3 style="text-align: center;">Software & Tools</h3>
     <a href="#" class="button4">PHOTOSHOP</a>
     <a href="#" class="button4">ILLUSTRATOR</a>
     <a href="#" class="button4">INDESIGN</a>
@@ -437,7 +455,8 @@
     <a href="#" class="button4">FIGMA</a>
     <a href="#" class="button4">AUTOCAD</a>
     <br>
-    <h3>Equipment Knowledge</h3>
+    <br>
+    <h3 style="text-align: center;">Equipment Knowledge</h3>
     <a href="#" class="button4">CANON90D</a>
     <a href="#" class="button4">ZOOMH6N</a>
     <a href="#" class="button4">MANFROTTO BEFREE TRIPOD</a>

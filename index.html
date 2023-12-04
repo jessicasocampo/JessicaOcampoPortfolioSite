@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Fonts-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap">
+  <!--Symbols & Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <title>Jessica Ocampo: Portfolio</title>
+  <title>Portfolio - Jessica Ocampo</title>
   <style>
     
-    /* Responsive Design Additions */
   /* Mobile view (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
@@ -19,16 +20,16 @@
   img {
     width: 75%;
   }
-  .button {
+  .homebutton {
     scale: 85%;
   }
-  .button2 {
+  .homebutton2 {
     scale: 85%;
   }
-  .button3 {
+  .colorbutton {
     scale: 85%;
   }
-  .button4 {
+  .clearbutton {
     scale: 85%;
   }
 }
@@ -42,8 +43,6 @@
     width: 100%;
   }
 }
-
-    
     body {
       margin: 0;
       padding: 0;
@@ -64,7 +63,6 @@
   		text-align: left; 
 		}
 
-
     header {
       position: static;
       width: 100%;
@@ -72,135 +70,7 @@
       color: black;
       text-align: center;
       padding: 5em 0;
-      z-index: 1000;
-      
-    }
-    
-    .button {
-      border-style: solid;
-      border-width: 1px;
-      border-color: white;
-      
-      border: 2px solid transparent; 
-  		border-radius: 5px; 
-  		animation: glowing 4s infinite;
-      
-  		background-color: black;
-  		color: white;
-  		padding: 10px 35px;
-  		text-align: center;
-  		text-decoration: none;
-  		display: inline-block;
-  		font-size: 20px;
-  		cursor: pointer;
-  		font-family: VT323, monospace;
-      
-      margin: 30px 50px;
-		}
-    
-  	.button2 {
-      border-style: solid;
-      border-width: 1px;
-      border-color: white;
-      
-      border: 2px solid transparent; 
-  		border-radius: 5px; 
-  		animation: glowing 4s infinite;
-      
-  		background-color: black;
-      color: white;
-  		padding: 10px 35px;
-  		text-align: center;
-  		text-decoration: none;
-  		display: inline-block;
-  		font-size: 20px;
-  		cursor: pointer;
-      font-family: VT323, monospace;
-      
-      margin: 30px 50px;
-		}
-    
-    .button:hover {
-      scale: 120%;
-      color: #d9c364;
-    }
-    
-    .button2:hover {
-      scale: 120%;
-      color: #d9c364;
-    }
-    
-    .button3 {
-      border-radius: 10px;
-      border-style: solid;
-      border-width: 1px;
-      border-color: white;
-      
-      background-color: #7a5a00;
-  		color: white;
-  		padding: 10px 15px;
-  		text-align: center;
-  		text-decoration: none;
-  		display: inline-block;
-  		font-size: 20px;
-  		margin: 10px 5px;
-  		cursor: pointer;
-      font-family: VT323, monospace;
-    }
-    
-    .button3:hover {
-      scale: 120%;
-      color: #d9c364;
-    }
-    
-    .button4 {
-      border-radius: 10px;
-      border-style: solid;
-      border-width: 1px;
-      border-color: white;
-      
-      background-color: black;
-  		color: white;
-  		padding: 10px 15px;
-  		text-align: center;
-  		text-decoration: none;
-  		display: inline-block;
-  		font-size: 20px;
-  		margin: 10px 5px;
-  		cursor: pointer;
-      font-family: VT323, monospace;
-    }
-    
-    .button4:hover {
-      scale: 120%;
-      color: #d9c364;
-    }
-    
-    .button5 {
-      border-style: solid;
-      border-width: 1px;
-      border-color: white;
-      
-      border: 2px solid transparent; 
-  		border-radius: 5px; 
-  		animation: glowing 4s infinite;
-      
-      background-color: #2e2e2e, 0;
-  		color: white;
-  		padding: 10px 20px;
-  		text-align: center;
-  		text-decoration: none;
-  		display: inline-block;
-  		font-size: 22px;
-  		margin: 20px 110px;
-  		cursor: pointer;
-      font-family: VT323, monospace;
-      float: left;
-    }
-    
-    .button5:hover {
-      scale: 120%;
-      color: #d9c364;
+      z-index: 1000; 
     }
 
     nav {
@@ -234,6 +104,7 @@
       text-align: center;
     }
     
+    /*Headers*/
     h1 {
       color: black;
       font-family: VT323, monospace;
@@ -258,11 +129,6 @@
             100% { text-shadow: 0 0 10px #d9c364; }
         }
     
-    @keyframes name {
-  from {color: #797d7c;}
-  to {color: black;}
-}
-
     h2 {
       color: #d9c364;
       font-family: VT323, monospace;
@@ -287,6 +153,134 @@
       font-family: VT323, monospace;
       font-weight: bold;
       margin: 0 20px;
+    }
+    
+    /*Buttons*/
+    .homebutton {
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      
+      border: 2px solid transparent; 
+  		border-radius: 5px; 
+  		animation: glowing 4s infinite;
+      
+  		background-color: black;
+  		color: white;
+  		padding: 10px 35px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 20px;
+  		cursor: pointer;
+  		font-family: VT323, monospace;
+      
+      margin: 30px 50px;
+		}
+    
+  	.homebutton2 {
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      
+      border: 2px solid transparent; 
+  		border-radius: 5px; 
+  		animation: glowing 4s infinite;
+      
+  		background-color: black;
+      color: white;
+  		padding: 10px 35px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 20px;
+  		cursor: pointer;
+      font-family: VT323, monospace;
+      
+      margin: 30px 50px;
+		}
+    
+    .homebutton:hover {
+      scale: 120%;
+      color: #d9c364;
+    }
+    
+    .homebutton2:hover {
+      scale: 120%;
+      color: #d9c364;
+    }
+    
+    .colorbutton {
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      
+      background-color: #7a5a00;
+  		color: white;
+  		padding: 10px 15px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 20px;
+  		margin: 10px 5px;
+  		cursor: pointer;
+      font-family: VT323, monospace;
+    }
+    
+    .colorbutton:hover {
+      scale: 120%;
+      color: #d9c364;
+    }
+    
+    .clearbutton {
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      
+      background-color: black;
+  		color: white;
+  		padding: 10px 15px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 20px;
+  		margin: 10px 5px;
+  		cursor: pointer;
+      font-family: VT323, monospace;
+    }
+    
+    .clearbutton:hover {
+      scale: 120%;
+      color: #d9c364;
+    }
+    
+    .button5 {
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      
+      border: 2px solid transparent; 
+  		border-radius: 5px; 
+  		animation: glowing 4s infinite;
+      
+      background-color: #2e2e2e, 0;
+  		color: white;
+  		padding: 10px 20px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 22px;
+  		margin: 20px 110px;
+  		cursor: pointer;
+      font-family: VT323, monospace;
+      float: left;
+    }
+    
+    .button5:hover {
+      scale: 120%;
+      color: #d9c364;
     }
 
     #pfp {
@@ -315,6 +309,7 @@
   		animation: glowing 4s infinite; 
     }
     
+    /*Glowing Box*/
     @keyframes glowing {
   	0% {
     	box-shadow: 0 0 5px 0px #d9c364;
@@ -334,6 +329,7 @@
   		clear: both;
 		}
     
+    /*Project Pictures*/
     #cc {
       width: 110%;
       margin: -12px;
@@ -349,27 +345,7 @@
       margin: -12px;
     }
     
-     #docu {
-      width: 85%;
-      border-style: outset;
-      border-width: 5px;
-      border-color: #2e2e2e;
-    }
-    
-     #vessay {
-      width: 85%;
-      border-style: outset;
-      border-width: 5px;
-      border-color: #2e2e2e;
-    }
-    
-     #silent {
-      width: 85%;
-      border-style: outset;
-      border-width: 5px;
-      border-color: #2e2e2e;
-    }
-    
+    /*Icon Style*/
     .fa-solid {
       scale: 120%;
       text-decoration: none;
@@ -387,6 +363,7 @@
       text-align: center;
       padding: 1em 0;
     }
+    
   </style>
 </head>
 <body>
@@ -399,13 +376,13 @@
   </nav>
   
   <header>
-     <img src="pfpavatar.png" alt="pfp" section id="pfp">
+    <img src="pfpavatar.png" alt="pfp" section id="pfp">
     <p style="font-size: 24px;">Hello fellow creators, I'm</p>
     <h1 class="glow-text">Jessica Ocampo</h1>
     <p>Designer &amp Developer</p>
     <br>
-    <a href="#about" class="button">Explore Skills</a>
-    <a href="#projects" class="button2">Tour Games</a>
+    <a href="#about" class="homebutton">Explore Skills</a>
+    <a href="#projects" class="homebutton2">Tour Games</a>
   </header>
   
   <section id="bio">
@@ -415,46 +392,44 @@
         As I move forward, attending Stratford School of Interaction Design and Business, I indulge in coding regarding design, UX/UI prototyping, film culture & digital culture.</p>
     <br>
     <h3>Let's Talk About</h3>
-    <a href="#" class="button3">WEBSITE DEVELOPMENT</a>
-    <a href="#" class="button3">GAME DEVELOPMENT</a>
-    <a href="#" class="button3">UX/UI PROTOTYPING</a>
-    <a href="#" class="button3">VIDEO EDITING</a>
+    <a href="#" class="colorbutton">WEBSITE DEVELOPMENT</a>
+    <a href="#" class="colorbutton">GAME DEVELOPMENT</a>
+    <a href="#" class="colorbutton">UX/UI PROTOTYPING</a>
+    <a href="#" class="colorbutton">VIDEO EDITING</a>
     <br>
     <h3>Hobbies</h3>
-    <a href="#" class="button4">GAMING</a>
-    <a href="#" class="button4">BADMINTON</a>
-    <a href="#" class="button4">FASHION</a>
-    <a href="#" class="button4">COOKING</a>
-    <a href="#" class="button4">WEIGHT-LIFTING</a>
+    <a href="#" class="clearbutton">GAMING</a>
+    <a href="#" class="clearbutton">BADMINTON</a>
+    <a href="#" class="clearbutton">FASHION</a>
+    <a href="#" class="clearbutton">COOKING</a>
+    <a href="#" class="clearbutton">WEIGHT-LIFTING</a>
   </section>
   
   <section id="skills" style="margin: 0 100px;">
     <br>
     <h2>Skills</h2>
     <h3 style="text-align: center;">Programming Languages</h3>
-    <a href="#" class="button4">JAVASCRIPT P5</a>
-    <a href="#" class="button4">HTML</a>
-    <a href="#" class="button4">CSS</a>
+    <a href="#" class="clearbutton">JAVASCRIPT P5</a>
+    <a href="#" class="clearbutton">HTML</a>
+    <a href="#" class="clearbutton">CSS</a>
     <br>
     <br>
     <h3 style="text-align: center;">Software & Tools</h3>
-    <a href="#" class="button4">PHOTOSHOP</a>
-    <a href="#" class="button4">ILLUSTRATOR</a>
-    <a href="#" class="button4">INDESIGN</a>
-    <a href="#" class="button4">PREMIER PRO</a>
-    <a href="#" class="button4">AFTER EFFECTS</a>
-    <a href="#" class="button4">FIGMA</a>
-    <a href="#" class="button4">AUTOCAD</a>
+    <a href="#" class="clearbutton">PHOTOSHOP</a>
+    <a href="#" class="clearbutton">ILLUSTRATOR</a>
+    <a href="#" class="clearbutton">INDESIGN</a>
+    <a href="#" class="clearbutton">PREMIER PRO</a>
+    <a href="#" class="clearbutton">AFTER EFFECTS</a>
+    <a href="#" class="clearbutton">FIGMA</a>
+    <a href="#" class="clearbutton">AUTOCAD</a>
     <br>
     <br>
     <h3 style="text-align: center;">Equipment Knowledge</h3>
-    <a href="#" class="button4">CANON90D</a>
-    <a href="#" class="button4">ZOOMH6N</a>
-    <a href="#" class="button4">MANFROTTO BEFREE TRIPOD</a>
-
+    <a href="#" class="clearbutton">CANON90D</a>
+    <a href="#" class="clearbutton">ZOOMH6N</a>
+    <a href="#" class="clearbutton">MANFROTTO BEFREE TRIPOD</a>
   </section>
   
-
    <section id="projects">
     <h2>Projects</h2>
      <div id="projects-container">

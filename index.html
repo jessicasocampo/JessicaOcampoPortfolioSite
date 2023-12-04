@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Jessica Ocampo: Portfolio</title>
   <style>
     
@@ -204,7 +205,7 @@
 
     nav {
   		display: flex;
-  		justify-content: flex-end; 
+  		justify-content: flex; 
   		align-items: center;
   		background-color: #ebf6f2, 0;
   		position: sticky;
@@ -226,6 +227,7 @@
       scale: 120%;
       color: #70121b;
     }
+    
 
     section {
       padding: 200px 20px;
@@ -281,7 +283,7 @@
       width: 20%;
       border-radius: 50%;
       float: left;
-      padding: 70px 20px;
+      padding: 80px 20px;
     }
     
     #pfp:hover {
@@ -289,22 +291,24 @@
       animation-duration: 4s;
     }
     
-    #insta {
+    .insta {
       width: 15%;
-      float: right;
+      float: left;
+      scale: 200%;
     }
     
-    #insta:hover {
-      scale: 120%;
+    .insta:hover {
+      scale: 240%;
     }
     
-    #spotify {
+    .spotify {
       width: 15%;
-  
+  		float: left;
+      scale: 200%;
     }
     
-    #spotify:hover {
-      scale: 120%;
+    .spotify:hover {
+      scale: 240%;
     }
     
     .projects {
@@ -391,12 +395,6 @@
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#connect">Connect</a>
-     <a href="https://instagram.com/jaesamanthaa?igshid=YTQwZjQ0NmI0OA==">
-  	<img src="instaicon.png" alt="insta" section id="insta">
-	</a>  
-  <a href="https://open.spotify.com/user/jesspotifs_?si=86fec1efd700443e">
-  	<img src="spotifyicon.png" alt="spotify" section id="spotify">
-	</a>
   </nav>
   
   <header>
@@ -422,7 +420,7 @@
     <p>Gaming, Badminton, Language Study, Fashion</p>
   </section>
   
-  <section id="skills">
+  <section id="skills" style="margin: 0 100px;">
     <br>
     <h2>Skills</h2>
     <h3>Programming Languages</h3>
@@ -452,20 +450,20 @@
      <div id="projects-container">
     <div class="projects">
       <img src="campusc.png" alt="cc" section id="cc">
-      <h3>Campus Chaos</h3>
+      <h3 style="padding-top: 20px;">Campus Chaos</h3>
       <p>(CS105) Javascript P5 Game.</p>
       <a href="https://vimeo.com/778728714?share=copy" class="button4">DEMO</a>
       <a href="https://openprocessing.org/sketch/1762623" class="button3">CLICK TO PLAY</a>
     </div>
     <div class="projects">
       <img src="intergalheist.png" alt="igh" section id="igh">
-      <h3>Intergalatic Jewellery Heist</h3>
+      <h3 style="padding-top: 20px;">Intergalatic Jewellery Heist</h3>
       <p>(ARTS140) Twine Kids game.</p>
       <a href="Intergalactic Jewellery Heist.html" class="button3">CLICK TO PLAY</a>
     </div>
     <div class="projects">
       <img src="ophone.png" alt="op" section id="op">
-      <h3>oPhone</h3>
+      <h3 style="padding-top: 20px;">oPhone</h3>
       <p>(CS106) Javascript P5 iPhone Mockup.</p>
       <a href="https://vimeo.com/890419342?share=copy" class="button4">DEMO</a>
       <a href="https://openprocessing.org/sketch/1888109" class="button3">CLICK TO VIEW</a>
@@ -481,6 +479,12 @@
     <p>jsocampo@uwaterloo.com</p>
     <a href="mailto:jsocampo@uwaterloo.com" class="button5">Send Email to Uwaterloo Account</a>
     <br>
+    <div class="spotify">
+    <i class="fa-brands fa-spotify" style="color: #ffffff;"></i>
+    </div>
+    <div class="insta">
+    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    </div>
   </section>
 
   <footer>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Fonts-->
+	<!--Fonts-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap">
@@ -11,47 +11,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Portfolio - Jessica Ocampo</title>
   <style>
-    
-  /* Mobile view (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 75%;
-  }
-  body {
-    font-size: 75%;
-  }
-  img {
-    width: 75%;
-  }
-  .homebutton {
-    scale: 85%;
-  }
-  .homebutton2 {
-    scale: 85%;
-  }
-  .colorbutton {
-    scale: 85%;
-  }
-  .clearbutton {
-    scale: 85%;
-  }
-}
-  
-/* Desktop view (desktops, 600px and up) */
-@media only screen and (min-width: 600px) {
-  body {
-    font-size: 100%;
-  }
-  img {
-    width: 100%;
-  }
-}
     body {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
    		color: white;
       font-size: 18px;
+      
+      /*From: https://img.freepik.com/premium-photo/blurry-abstract-background-black-white-gradient-apps-web-design-web-pages-banners-illustration-designxa_97567-2129.jpg
+			Author: freepik.com
+			Name: ombbg.avif
+			Description: Image background
+			Date retrieved: December 2, 2023*/
+      
       background-image: url("ombbg.avif");
       background-repeat: no-repeat;
       background-size: 100% 900px;
@@ -76,6 +48,7 @@
       z-index: 1000; 
     }
 
+    /*Nav Bar*/
     nav {
   		display: flex;
   		justify-content: flex; 
@@ -285,18 +258,8 @@
       scale: 120%;
       color: #d9c364;
     }
-
-    #pfp {
-      width: 20%;
-      border-radius: 50%;
-      padding: 0px 0px;
-    }
     
-    #pfp:hover {
-      transform: rotate(355deg);
-      animation-duration: 4s;
-    }
-    
+    /*Project*/
     .projects {
       width: 250px;
       height: 400px;
@@ -363,6 +326,18 @@
       scale: 160%;
       text-decoration: none;
     }
+    
+    /*Images*/
+     #pfp {
+      width: 20%;
+      border-radius: 50%;
+      padding: 0px 0px;
+    }
+    
+    #pfp:hover {
+      transform: rotate(355deg);
+      animation-duration: 4s;
+    }
 
     footer {
       background-color: black;
@@ -380,6 +355,8 @@
     <a href="#bio">Bio</a>
     <a href="#skills">Skills</a>
     <a href="#connect">Connect</a>
+    <a href="https://www.linkedin.com/in/jessica-ocampo-1740782a3/" class="fa-brands fa-linkedin" style="color: black;"></a>
+    <a href="https://github.com/jessicasocampo" class="fa-brands fa-square-github" style="color: black;"></a>
   </nav>
   
   <header>    
@@ -426,6 +403,7 @@
     <img src="pfpavatar.png" alt="pfp" section id="pfp" style="float:left;">
 		<p>I am a 19 year old student studying global business and digital arts at the University of Waterloo. 
         As I move forward, attending Stratford School of Interaction Design and Business, I indulge in coding regarding design, UX/UI prototyping, film culture & digital culture.</p>
+    <br>
     <br>
     <h3>Let's Talk About</h3>
     <a href="#" class="colorbutton">WEBSITE DEVELOPMENT</a>

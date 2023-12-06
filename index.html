@@ -267,7 +267,8 @@
       height: 400px;
       margin: 50px auto;
       padding: 10px 10px 10px 10px;
-      margin-left: 60px;
+      margin-left: 30px;
+      margin-right: 30px;
       background-color: #786e43, 0;
       text-align: left;      
       border: 2px solid transparent; 
@@ -276,6 +277,12 @@
       cursor: pointer;
       float: left;
     }
+    
+		.project-section {
+  		display: flex;
+  		justify-content: center;
+		}
+
     
     /*Glowing Box*/
     @keyframes glowing {
@@ -414,7 +421,7 @@
   </nav>
   
   <header>    
-    <p style="font-size: 24px; margin: 0 80;"><˙ᵕ˙> Hello, my name is</p>
+    <p style="font-size: 24px; margin: 0 50;"><˙ᵕ˙> Hello, my name is</p>
     <h1 class="glow-text">Jessica Ocampo.</h1>
     <p style="margin: 0 80px;">Student, Designer, Developer.</p>
     <br>
@@ -427,6 +434,8 @@
   <section id="projects">
     <h2>Projects</h2>
      <div id="projects-container">
+       <div class = "project-section">
+         
     <div class="projects">
       <img src="campusc.png" alt="cc" section id="cc">
       <h3 style="padding-top: 20px;">Campus Chaos</h3>
@@ -451,7 +460,8 @@
       <a href="https://vimeo.com/890419342?share=copy" class="fa-solid fa-desktop" style="color: #ffffff;"></a>
       <a href="https://openprocessing.org/sketch/1888109" class="fa-solid fa-play" style="color: #ffffff;"></a>
     	</div>
-  	</div>
+  		</div>
+    </div>
   </section>
   
   <section id="bio">
@@ -465,8 +475,8 @@
     <br>
     <h3>Let's Talk About</h3>
     <i class="fa-solid fa-comment"></i>
-    <a href="#" class="colorbutton">WEBSITE DEVELOPMENT</a>
-    <a href="#" class="colorbutton">GAME DEVELOPMENT</a>
+    <strong class="colorbutton">WEBSITE DEVELOPMENT</strong>
+    <strong class="colorbutton">GAME DEVELOPMENT</strong>
     <a href="#" class="colorbutton">UX/UI PROTOTYPING</a>
     <a href="#" class="colorbutton">VIDEO EDITING</a>
     <br>
@@ -517,7 +527,7 @@
   <section id="connect">
     <h2>Connect</h2>
     <h3> Contact Information</h3>
-    <a href="#" class="fa-solid fa-phone" style="color: #ffffff; float: left; margin: 0 120px; margin-right: 10px;"></a>
+    <i class="fa-solid fa-phone" style="color: #ffffff; float: left; margin: 0 120px; margin-right: 10px;"></i>
     <p style="margin: 0;">905-251-0383</p>
     <a href="mailto:jessicaocampoedu@gmail.com" class="fa-solid fa-envelope" style="color: #ffffff; float: left; margin: 0 120px; margin-right: 10px;"></a>
     <p style="margin: 0;">jessicaocampoedu@gmail.com</p>

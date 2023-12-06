@@ -358,6 +358,24 @@
     .worklinks:hover {
       color: #6f6285;
     }
+    
+    #messagetext {
+      background-color: black;
+      animation: glowing 4s infinite;
+      color: white;
+      margin: 20px 20px;
+      width: 75%; 
+      height: 250px;
+    }
+    
+    #submit {
+      color: white;
+      margin: 20px 20px;
+      width: 80px; 
+      height: 50px; 
+      font-family: "Rubik", sans-serif; 
+      font-size: 15;
+    }
 
     footer {
       background-color: black;
@@ -493,10 +511,10 @@
     <h3>Let's connect.</h3>
     <p>Drop me a message and I'll get back to you as soon as possible.</p>
     <br>
-    <form action="#">
+    <form action="mailto:jessicaocampoedu@gmail.com" method="post">
       <label for="message">Send a Message</label><br>
-  		<input type="text" id="message" name="message" style="margin: 20px; 20px; width: 75%; height:250px;"><br>
-      <input type="submit" value="Submit" class="clearbutton" style="margin: 20px; 20px; width:80px; height:50px; font-family: 'Rubik', sans-serif; font-size:15;">
+  		<input type="text" id="messagetext" name="messagetext"><br>
+      <input type="submit" id="submit" value="Submit" class="clearbutton">
     </form>
   </section>
 
